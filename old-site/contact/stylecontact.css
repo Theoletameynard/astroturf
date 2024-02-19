@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.video-logo-container {
+    position: relative;
+    height: 100%;
+
+}
+
+#logoVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que la vidéo couvre tout l'écran */
+    position: fixed; /* Fixe la vidéo en arrière-plan */
+    z-index: -1; /* Place la vidéo derrière les autres éléments */
+}
+
+.contact-form-container {
+    position: fixed;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Ajustez selon vos préférences */
+    max-width: 500px; /* Ajustez selon vos préférences */
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #logoVideo {
+        width: 120%; /* ou la taille que vous souhaitez */
+        height: auto; /* pour maintenir le ratio d'aspect */
+        left: -5%;
+        top: 4%;
+    }
+
+}
