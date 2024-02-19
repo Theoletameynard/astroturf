@@ -2,16 +2,20 @@
 
 ## to do
 * [x] setup github
-* [ ] mettre un favicon
+* [x] mettre un favicon
 * [ ] `<meta>` tags
 * [ ] epurer le code
 * [ ] ajouter code sur github
 * [ ] mettre le fond d'écran noir
-* [ ] Travailler le référencement
+* [ ] version mobile
 * [ ] cleanup 🧽 
     * [ ] harmonizer noms de classes et ID
     * [ ] commentaires code
     * [ ] ...
+* SEO
+    * [ ] Travailler le référencemen
+    * [ ] add "title" to every `<a>` tag
+    * [ ] meta tags
 
 ## ressources
 ### online tools

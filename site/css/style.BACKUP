@@ -1,0 +1,493 @@
+/* ASTROTURF
+ *
+ * 0. layout
+ * 1. video background
+ * 2. typography
+ * 3. mobile
+ *
+ */
+
+/* === 0. LAYOUT === */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+nav {
+  width:100%;
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+}
+
+nav ul li {
+  flex:1;
+} 
+
+/*
+@font-face {
+    font-family: 'RussoOne';
+    src: url('RussoOne.ttf') format('truetype');
+    font-display: swap;
+}
+
+
+
+
+h1 {
+  color:rgba(0,0,0,0);
+}
+
+.overlay-title {
+  position:relative;
+  z-index:1;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#maVideo {
+      display:none !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+.blur-video {
+    filter: blur(15px);
+}
+
+
+
+    
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Assurez-vous que cette valeur est supérieure à celle de la vidéo */
+    width:40%; /* Ajustez cette valeur selon vos besoins */
+    height: auto; /* Cela préserve le ratio d'aspect de l'image */
+    color: rgba(248, 247, 247, 0.863);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombrage du texte */
+    transition: color 0.3s; /* Transition de couleur pour une animation fluide */
+    display: flex;
+    justify-content: space-between; /* Ajustez selon vos besoins */
+    align-items: center;
+}
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.overlay-content {
+    display: none; /* Cela cache initialement tous les contenus */
+    position: absolute;
+    z-index: 2;
+    top: 78%; /* Ajustez la valeur top pour placer le titre légèrement plus bas */
+    left: 50%; /* Centre le titre horizontalement */
+    transform: translate(-50%, -50%); /* Centre le titre horizontalement et verticalement */
+    color: rgba(255, 255, 255, 0.911); /* Couleur du texte en blanc */
+    font-size: 16px;
+    white-space: pre-line; /* Respecte les sauts de ligne naturels */
+    line-height: 1.5; /* Espacement entre les lignes */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+    text-align: justify; /* Alignement du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombrage du texte pour le contraste */
+    box-sizing: border-box; /* Inclut padding et border dans la taille totale */
+    height: 100%; /* Hauteur automatique basée sur le contenu */
+    width: 75%;
+    overflow-y: auto; /* Ajoute une barre de défilement vertical si nécessaire */
+    max-height: 95vh; /* Limite la hauteur du contenu à 80% de la hauteur de la fenêtre */
+    padding: 3%;
+    padding-bottom: 15% ;
+  
+    
+    
+}
+
+
+.overlay-content.show {
+    display: block; /* Cela affiche le contenu lorsqu'il a la classe 'show' */
+}
+
+footer {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover { 
+    text-decoration: underline; color: #FFD700;
+
+}
+
+footer p {
+
+    min-height: 24px; 
+    margin-bottom: 10px;
+}
+   
+.social-links {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px; /* Espacement existant entre les icônes */
+  }
+  
+  .social-links img {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    transition: transform 0.3s ease; /* Rend l'agrandissement plus fluide */
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.1); /* Effet de survol */
+    cursor: pointer;
+  }
+
+
+/* Styles pour le titre "À propos" */
+h1 a[href="#Astroturf"] {
+    position: absolute;
+    width:8%; /* Ajustez cette valeur selon vos besoins */
+    top: 25%; /* Ajustez la valeur top pour placer le titre légèrement plus bas */
+    left: 9%; /* Centre le titre horizontalement */
+    transform: translate(-50%, -50%); /* Centre le titre horizontalement et verticalement */
+    color: rgba(255, 255, 255, 0.911); /* Couleur du texte en blanc */
+    text-decoration: none; /* Supprime le soulignage du lien */
+    font-weight: 50; /* Réglez le poids de la police */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombrage du texte */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    font-size: 25px; /* Ajustez la taille de la police */
+}
+
+/* Au survol, si vous souhaitez modifier le style au survol, vous pouvez ajouter le code suivant */
+h1 a[href="#Astroturf"]:hover {
+    color: burlywood; /* Couleur au survol en bleu (à ajuster selon vos préférences) */
+}
+
+
+/* Styles pour le titre "Qui sommes nous" */
+h1 a[href="#Vidéos-professionnelles"] {
+    position: absolute;
+    width:15%; /* Ajustez cette valeur selon vos besoins */
+    top: 25%; /* Ajustez la valeur top pour placer le titre légèrement plus bas */
+    left: 50%; /* Centre le titre horizontalement */
+    transform: translate(-50%, -50%); /* Centre le titre horizontalement et verticalement */
+    color: rgba(255, 255, 255, 0.911); /* Couleur du texte en blanc */
+    text-decoration: none; /* Supprime le soulignage du lien */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    font-weight: 50; /* Réglez le poids de la police */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombrage du texte */
+    font-size: 25px; /* Ajustez la taille de la police */
+}
+
+/* Au survol, si vous souhaitez modifier le style au survol, vous pouvez ajouter le code suivant */
+h1 a[href="#Vidéos-professionnelles"]:hover {
+    color: burlywood; /* Couleur au survol en bleu (à ajuster selon vos préférences) */
+}
+
+/* Styles pour le titre "Formulaire de contact" */
+h1 a[href="contact.html"] {
+    position: absolute;
+    width:15%; /* Ajustez cette valeur selon vos besoins */
+    top: 25%; /* Ajustez la valeur top pour placer le titre légèrement plus bas */
+    left: 88%; /* Centre le titre horizontalement */
+    transform: translate(-50%, -50%); /* Centre le titre horizontalement et verticalement */
+    color: rgba(255, 255, 255, 0.911); /* Couleur du texte en blanc */
+    text-decoration: none; /* Supprime le soulignage du lien */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    font-weight: 50; /* Réglez le poids de la police */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombrage du texte */
+    display: flex;
+    justify-content: space-between; /* Ajustez selon vos besoins */
+    align-items: center;
+    font-size: 25px; /* Ajustez la taille de la police */
+
+}
+
+/* Au survol, si vous souhaitez modifier le style au survol, vous pouvez ajouter le code suivant */
+h1 a[href="contact.html"]:hover {
+    color: burlywood; /* Couleur au survol en bleu (à ajuster selon vos préférences) */
+}
+
+
+/* Style de la barre de défilement pour les navigateurs WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px; /* Ajustez la largeur selon le look désiré */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Couleur de fond discrète */
+    border-radius: 10px; /* Bords arrondis pour un look moderne */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6); /* Couleur de la barre, semi-transparente pour un style épuré */
+    border-radius: 10px; /* Bords arrondis pour correspondre à la piste */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Petite bordure pour délimiter */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8); /* Plus claire au survol pour une interaction visuelle */
+}
+
+/* Style de la barre de défilement pour Firefox */
+* {
+    scrollbar-width: thin; /* 'auto' ou 'thin' selon vos préférences */
+    scrollbar-color: rgba(255, 255, 255, 0.6) rgba(0, 0, 0, 0.1); /* Couleurs pour la barre et la piste */
+}
+
+
+
+
+/* Réglez la taille de la police pour les smartphones */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Ajustez la taille de la police selon vos besoins */
+    
+
+    /* Redimensionnez la vidéo pour les smartphones */
+    #maVideo {
+        width: 130; /* Ajustez la largeur selon vos besoins */
+        height: auto;
+        max-width: none; /* Supprimez la limitation de la largeur maximale */
+        max-height: none; /* Supprimez la limitation de la hauteur maximale */
+        object-fit: cover; /* Remplissez l'espace en coupant la vidéo si nécessaire */
+        object-position: center; /* Ajustez pour changer le cadrage */
+        }
+        
+    }
+
+    /* Ajustez la taille du logo pour les smartphones */
+    .logo {
+        height: auto; /* Cela préservera le ratio d'aspect de l'image */
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10; /* Assurez-vous que cette valeur est supérieure à celle de la vidéo */
+        width:300px; /* Ajustez cette valeur selon vos besoins */
+    }
+
+    .title-link {
+        cursor: pointer;
+    }
+
+    /* Ajustez la taille et la position du titre "À propos" */
+    h1 a[href="#Astroturf"] {
+        font-size: 7px; /* Ajustez la taille de la police */
+        top: 16%; /* Ajustez la position verticale selon vos besoins */
+        left: 10%; /* Centrez horizontalement */
+        transform: translateX(-50%); /* Centrez horizontalement */
+        white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    }
+
+    /* Ajustez la taille et la position du titre "Qui sommes-nous" */
+    h1 a[href="#Vidéos-professionnelles"] {
+        font-size: 7px; /* Ajustez la taille de la police */
+        top: 16%; /* Ajustez la position verticale selon vos besoins */
+        left: 45%; /* Centrez horizontalement */
+        transform: translateX(-50%); /* Centrez horizontalement */
+    }
+
+    /* Ajustez la taille et la position du titre "Formulaire de contact" */
+    h1 a[href="contact.html"] {
+        font-size: 7px; /* Ajustez la taille de la police */
+        top: 16%; /* Ajustez la position verticale selon vos besoins */
+        left: 78%; /* Centrez horizontalement */
+        transform: translateX(-50%); /* Centrez horizontalement */
+    }
+
+
+/* PARAGRAPHES */
+.overlay-content {
+    /* Styles pour les petits écrans */
+    top: 18%; /* Ajustez la valeur top pour le positionnement vertical */
+    left: 5%; /* Ajustez la valeur left pour le positionnement horizontal */
+    max-height: none; /* Réinitialisez la limite de hauteur */
+    width: 90%; /* Ajustez la largeur */
+    transform: none; /* Réinitialisez la transformation */
+    text-align: left; /* Ajustez l'alignement du texte si nécessaire */
+    max-height: 75vh; /* Limite la hauteur du contenu à 80% de la hauteur de la fenêtre */
+    overflow-y: auto; /* Ajoute une barre de défilement vertical si nécessaire */
+    font-size: 10px; /* Ajustez la taille de la police */
+}
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+   
+ /* Ajustez la taille et la position du titre "À propos" */
+ h1 a[href="#Astroturf"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 14%; /* Ajustez la position verticale selon vos besoins */
+    left: 10%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+/* Ajustez la taille et la position du titre "Qui sommes-nous" */
+h1 a[href="#Vidéos-professionnelles"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 14%; /* Ajustez la position verticale selon vos besoins */
+    left: 45%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+}
+
+/* Ajustez la taille et la position du titre "Formulaire de contact" */
+h1 a[href="contact.html"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 14%; /* Ajustez la position verticale selon vos besoins */
+    left: 78%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+}
+
+
+/* PARAGRAPHES */
+.overlay-content {
+/* Styles pour les petits écrans */
+top: 18%; /* Ajustez la valeur top pour le positionnement vertical */
+left: 5%; /* Ajustez la valeur left pour le positionnement horizontal */
+max-height: none; /* Réinitialisez la limite de hauteur */
+width: 90%; /* Ajustez la largeur */
+transform: none; /* Réinitialisez la transformation */
+text-align: left; /* Ajustez l'alignement du texte si nécessaire */
+max-height: 75vh; /* Limite la hauteur du contenu à 80% de la hauteur de la fenêtre */
+overflow-y: auto; /* Ajoute une barre de défilement vertical si nécessaire */
+}
+
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+ 
+ /* Ajustez la taille et la position du titre "À propos" */
+ h1 a[href="#Astroturf"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 18%; /* Ajustez la position verticale selon vos besoins */
+    left: 10%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+/* Ajustez la taille et la position du titre "Qui sommes-nous" */
+h1 a[href="#Vidéos-professionnelles"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 18%; /* Ajustez la position verticale selon vos besoins */
+    left: 45%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+}
+
+/* Ajustez la taille et la position du titre "Formulaire de contact" */
+h1 a[href="contact.html"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 18%; /* Ajustez la position verticale selon vos besoins */
+    left: 75%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+}
+
+
+/* PARAGRAPHES */
+.overlay-content {
+/* Styles pour les petits écrans */
+top: 25%; /* Ajustez la valeur top pour le positionnement vertical */
+left: 5%; /* Ajustez la valeur left pour le positionnement horizontal */
+max-height: none; /* Réinitialisez la limite de hauteur */
+width: 90%; /* Ajustez la largeur */
+transform: none; /* Réinitialisez la transformation */
+text-align: left; /* Ajustez l'alignement du texte si nécessaire */
+max-height: 75vh; /* Limite la hauteur du contenu à 80% de la hauteur de la fenêtre */
+overflow-y: auto; /* Ajoute une barre de défilement vertical si nécessaire */
+}
+
+
+
+}
+
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+
+ /* Ajustez la taille et la position du titre "À propos" */
+ h1 a[href="#Astroturf"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 23%; /* Ajustez la position verticale selon vos besoins */
+    left: 10%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+/* Ajustez la taille et la position du titre "Qui sommes-nous" */
+h1 a[href="#Vidéos-professionnelles"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 23%; /* Ajustez la position verticale selon vos besoins */
+    left: 50%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+}
+
+/* Ajustez la taille et la position du titre "Formulaire de contact" */
+h1 a[href="contact.html"] {
+    font-size: 12px; /* Ajustez la taille de la police */
+    top: 23%; /* Ajustez la position verticale selon vos besoins */
+    left: 80%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+}
+
+
+/* PARAGRAPHES */
+.overlay-content {
+/* Styles pour les petits écrans */
+top: 25%; /* Ajustez la valeur top pour le positionnement vertical */
+left: 5%; /* Ajustez la valeur left pour le positionnement horizontal */
+max-height: none; /* Réinitialisez la limite de hauteur */
+width: 90%; /* Ajustez la largeur */
+transform: none; /* Réinitialisez la transformation */
+text-align: left; /* Ajustez l'alignement du texte si nécessaire */
+max-height: 75vh; /* Limite la hauteur du contenu à 80% de la hauteur de la fenêtre */
+overflow-y: auto; /* Ajoute une barre de défilement vertical si nécessaire */
+}
+
+
+
+}
