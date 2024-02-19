@@ -1,5 +1,4 @@
 # Astroturf
-## Read me
-Blabla
 
-martin est passé par là
+## to do
+* [ ] mettre un favicon
