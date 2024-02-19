@@ -3,9 +3,9 @@
 ## to do
 * [x] setup github
 * [x] mettre un favicon
+* [x] ajouter code sur github
 * [ ] `<meta>` tags
 * [ ] epurer le code
-* [ ] ajouter code sur github
 * [ ] mettre le fond d'écran noir
 * [ ] version mobile
 * [ ] cleanup 🧽 
