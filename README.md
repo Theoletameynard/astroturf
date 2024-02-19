@@ -2,6 +2,9 @@
 
 ## to do
 * [ ] mettre un favicon
-* [ ] rajouter `<meta>` tags
+* [ ] `<meta>` tags
 * [ ] epurer le code
 * [ ] ajouter code sur github
+* [ ] mettre le fond d'écran noir
+
+
