@@ -3,7 +3,7 @@ console.log("hello world");
 $("#artists, #pro, #contact").hide();
 
 function showDiv(id){
-    $("#content div").hide();
+$("#artists, #pro, #contact").hide();
     $(id).is(":visible") ?
         $(id).hide() :
         $(id).show();
