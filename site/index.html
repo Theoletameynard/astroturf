@@ -39,11 +39,26 @@
 
       <nav>
 	<ul>
-	  <li><a href="#astroturf">Vidéos pour artistes</a></li>
-	  <li><a href="#astroturf">Vidéos professionelles</a></li>
-	  <li><a href="./contact/">Contactez nous</a></li>
+	  <li><a href="#artists" onclick="showDiv('#artists')">Vidéos pour artistes</a></li>
+	  <li><a href="#pro" onclick="showDiv('#pro')">Vidéos professionelles</a></li>
+	  <li><a href="#contact" onclick="showDiv('#contact')">Contactez nous</a></li>
 	</ul>
       </nav>
+
+	<div id="content">
+		<div id="artists">
+			<p>Astroturf est une société de production qui se distingue par son collectif de professionnels de l'audiovisuel, comprenant réalisateurs, techniciens, et créatifs de divers horizons. Ce réseau collaboratif s'est forgé autour de la réalisation de multiples projets, chacun apportant sa touche unique pour enrichir la vision globale de l'entreprise. Notre producteur, au centre de ce processus créatif, joue un rôle crucial dans l'assemblage des talents les plus à même de donner vie aux projets qui nous sont confiés, garantissant ainsi une adéquation parfaite entre les aspirations artistiques de nos clients et les compétences de notre équipe.</p>
+		</div>
+		<div id="pro">
+			<p>PRO PRO PRO</p>
+			<p>PRO PRO PRO</p>
+			<p>PRO PRO PRO</p>
+			<p>PRO PRO PRO</p>
+		</div>
+		<div id="contact">
+			<p><input type="text"></input></p>
+		</div>
+	</div>
 <!--
       <div id="Astroturf" class="overlay-content">
 	<h2><p><strong>Astroturf</strong> : <strong>Vidéos pour Artistes</strong>
@@ -88,6 +103,7 @@
 
     </div>
 
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html

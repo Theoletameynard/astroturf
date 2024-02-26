@@ -1,5 +1,16 @@
 console.log("hello world");
 
+$("#artists, #pro, #contact").hide();
+
+function showDiv(id){
+    $("#content div").hide();
+    $(id).is(":visible") ?
+        $(id).hide() :
+        $(id).show();
+}
+
+
+/*
 /*
 
   // Sélectionnez l'élément du logo
@@ -19,22 +30,22 @@ logoLink.addEventListener('click', (e) => {
 
 document.querySelectorAll('.title-link').forEach(link => {
     link.addEventListener('click', (e) => {
-	const href = link.getAttribute('href');
+    const href = link.getAttribute('href');
 
-	if (href === './contact/') {
+    if (href === './contact/') {
 // Ne rien faire, laisser le comportement par défaut du lien s'effectuer
 // e.preventDefault() et la logique AJAX sont retirés
-	} else if (href.startsWith('#')) {
-	    e.preventDefault();
-	    const targetId = href.substring(1);
-	    toggleContent(targetId);
-	}
+    } else if (href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        toggleContent(targetId);
+    }
     });
 });
 
 function toggleContent(targetId) {
     document.querySelectorAll('.overlay-content').forEach(content => {
-	content.classList.remove('show');
+    content.classList.remove('show');
     });
     document.getElementById(targetId).classList.add('show');
     document.getElementById('maVideo').classList.add('blur-video');
@@ -42,10 +53,10 @@ function toggleContent(targetId) {
 
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.overlay-titles') && !e.target.closest('.overlay-content')) {
-	document.querySelectorAll('.overlay-content').forEach(content => {
-	    content.classList.remove('show');
-	});
-	document.getElementById('maVideo').classList.remove('blur-video');
+    document.querySelectorAll('.overlay-content').forEach(content => {
+        content.classList.remove('show');
+    });
+    document.getElementById('maVideo').classList.remove('blur-video');
     }
 });
 */
