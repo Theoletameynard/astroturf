@@ -39,11 +39,8 @@ body, html {
   height: 100vh;
   overflow: hidden;
   z-index: 1;
-  /*
   display:flex;
-  align-items:center;
-  justify-content:center;
-   */
+  flex-direction: column;
 }
 
 #background-video {
@@ -83,6 +80,11 @@ nav ul li {
 #content {
   display: flex;
   justify-content:center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#contact {
 }
 
 #artists, #pro, #contact {
@@ -142,4 +144,41 @@ nav a:hover {
 
 footer {
   background:rgba(50,50,50,0.3);
+}
+
+.blendy {
+  inset: 0;
+  display: grid;
+  background-color: #000;
+  overflow:visible;
+  color: #fff;
+  font-family: sans-serif;
+  /* Mix Blend Mode does the all magic */
+  mix-blend-mode: multiply;
+  user-select: none;
+}
+
+#wrap {
+  height:100%;
+  width:100%;
+  position:fixed;
+}
+
+input {
+  background-color:rgba(88,88,88,1);
+  color:#fff;
+  border:none;
+  border-bottom:2px solid #fff;
+  font-size:18pt;
+}
+
+input[type="submit"]{
+  border-radius:6px;
+}
+
+textarea {
+  width:400px;
+  height:250px;
+  background:#111;
+  color:#fff;
 }

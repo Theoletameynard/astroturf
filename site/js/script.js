@@ -9,6 +9,14 @@ $("#background-video, h1").click(function(){
 
 function showDiv(id){
   $("#artists, #pro, #contact").hide();
+ 
+  if(id == "#contact") {
+    $("h1, nav, #content").addClass("blendy");
+  }
+  else {
+    $("h1, nav, #content").removeClass("blendy");
+  }
+
   $(id).is(":visible") ?
     $(id).hide() :
     $(id).show();
