@@ -8,8 +8,8 @@
  */
 
 /* === X. TO REMOVE === */
-body {
-  background:lightblue;
+body,html {
+  background:#000;
 }
 
 .mid {
@@ -56,7 +56,7 @@ body, html {
 
   z-index: -1;
 
-
+  transition:all 750ms linear;
 }
 
 nav, h1, footer{

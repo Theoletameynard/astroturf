@@ -2,16 +2,39 @@ console.log("hello world");
 
 $("#artists, #pro, #contact").hide();
 
+$("#background-video, h1").click(function(){
+  //$("#artists, #pro, #contact").hide();
+  showDiv(null);
+});
+
 function showDiv(id){
-$("#artists, #pro, #contact").hide();
-    $(id).is(":visible") ?
-        $(id).hide() :
-        $(id).show();
+  $("#artists, #pro, #contact").hide();
+  $(id).is(":visible") ?
+    $(id).hide() :
+    $(id).show();
+
+  $(id).is(":visible") ?
+    $("#background-video").css({
+      'filter'         : 'blur(30px)',
+      '-webkit-filter' : 'blur(30px)',
+      '-moz-filter'    : 'blur(30px)',
+      '-o-filter'      : 'blur(30px)',
+      '-ms-filter'     : 'blur(30px)',
+      'opacity'		:'0.6'
+    }):
+    $("#background-video").css({
+      'filter'         : 'blur(0px)',
+      '-webkit-filter' : 'blur(0px)',
+      '-moz-filter'    : 'blur(0px)',
+      '-o-filter'      : 'blur(0px)',
+      '-ms-filter'     : 'blur(0px)',
+      'opacity'		:'1'
+    });
 }
 
 
 /*
-/*
+  /*
 
   // Sélectionnez l'élément du logo
       const logo = document.querySelector('.logo');
@@ -36,9 +59,9 @@ document.querySelectorAll('.title-link').forEach(link => {
 // Ne rien faire, laisser le comportement par défaut du lien s'effectuer
 // e.preventDefault() et la logique AJAX sont retirés
     } else if (href.startsWith('#')) {
-        e.preventDefault();
-        const targetId = href.substring(1);
-        toggleContent(targetId);
+	e.preventDefault();
+	const targetId = href.substring(1);
+	toggleContent(targetId);
     }
     });
 });
@@ -54,7 +77,7 @@ function toggleContent(targetId) {
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.overlay-titles') && !e.target.closest('.overlay-content')) {
     document.querySelectorAll('.overlay-content').forEach(content => {
-        content.classList.remove('show');
+	content.classList.remove('show');
     });
     document.getElementById('maVideo').classList.remove('blur-video');
     }
