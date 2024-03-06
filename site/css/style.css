@@ -100,12 +100,21 @@ footer {
   font-family: 'RussoOne', sans-serif !important;
 }
 
+h2 {
+  margin-bottom:12pt;
+}
+
 nav a {
   font-size:24pt;
 }
 
 #content {
   font-size:18pt;
+}
+
+p {
+  line-height:120%;
+  margin-bottom:12pt;
 }
 
 /* === 3. COLORS === */
