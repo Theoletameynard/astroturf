@@ -5,13 +5,13 @@
 * [x] mettre un favicon
 * [x] ajouter code sur github
 * [ ] `<meta>` tags
-* [ ] epurer le code
-* [ ] mettre le fond d'écran noir
-* [ ] version mobile
-* [ ] cleanup 🧽 
-    * [ ] harmonizer noms de classes et ID
-    * [ ] commentaires code
-    * [ ] ...
+* [x] epurer le code
+* [x] mettre le fond d'écran noir
+* [ ] version mobile 📵 
+* [x] cleanup 🧽 
+    * [x] harmonizer noms de classes et ID
+    * [x] commentaires code
+    * [x] w3c validator
 * SEO
     * [ ] Travailler le référencemen
     * [ ] add "title" to every `<a>` tag

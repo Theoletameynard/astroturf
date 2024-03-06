@@ -3,29 +3,12 @@
  * 0. layout
  * 1. video background
  * 2. typography
+ * 3. color
  * 3. mobile
  *
  */
 
-/* === X. TO REMOVE === */
-body,html {
-  background:#000;
-}
-
-.mid {
-  width:50%;
-  opacity:30%;
-  background:red;
-  height:100%;
-  position:fixed;
-  top:0;
-  left:0;
-
-  z-index:100;
-}
-
-
-/* === 0. LAYOUT === */
+/* ===== 0. LAYOUT ===== */
 
 body, html {
   height: 100%;
@@ -58,13 +41,18 @@ body, html {
 
 nav, h1, footer{
   width:100%;
-  z-index: 10 !important;
+  z-index: 10;
 }
 
 h1 {
   position: relative;
   text-align:center;
   z-index: 2;
+  color: rgba(0,0,0,0);
+}
+
+h1 a {
+  color: rgba(0,0,0,0);
 }
 
 nav ul{
@@ -120,7 +108,11 @@ nav a {
   font-size:18pt;
 }
 
-/* === ?. COLORS === */
+/* === 3. COLORS === */
+html, body {
+  background:#000;
+}
+
 h1 img:hover {
   filter: sepia(100%);
   -webkit-filter: sepia(100%);
@@ -145,6 +137,8 @@ nav a:hover {
 footer {
   background:rgba(50,50,50,0.3);
 }
+
+/* ===== logo video bg ==== */
 
 .blendy {
   inset: 0;
@@ -182,3 +176,5 @@ textarea {
   background:#111;
   color:#fff;
 }
+
+/* ===== ?. mobile ===== */
