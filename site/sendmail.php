@@ -8,7 +8,7 @@
 <body>
   <div class="video-logo-container">
         <video autoplay muted loop playsinline id="logoVideo">
-            <source src=".../medias/Videocontact.mp4" type="video/mp4">
+            <source src="medias/Videocontact.mp4" type="video/mp4">
             Votre navigateur ne supporte pas les vidéos HTML5.
         </video>
     </div>
