@@ -8,7 +8,8 @@
 * [x] epurer le code
 * [x] mettre le fond d'écran noir
 * [ ] version mobile 📵 
-* [x] cleanup 🧽 
+* [x] cleanup 🧽
+* [ ] Page bravo pour le mail
     * [x] harmonizer noms de classes et ID
     * [x] commentaires code
     * [x] w3c validator
