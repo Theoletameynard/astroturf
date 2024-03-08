@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astroturf : Message envoyé !</title>
+</head>
+<body>
+  <div class="video-logo-container">
+        <video autoplay muted loop playsinline id="logoVideo">
+            <source src=".../medias/Videocontact.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+    </div>
+</body>
+</html>
+
+
 <?php
 
 ini_set('display_errors', 1);
