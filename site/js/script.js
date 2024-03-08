@@ -7,7 +7,7 @@ $("#background-video, h1, #content").click(function(){
   showDiv(null);
 });
 
-$("p").click(function(e){
+$("p, form").click(function(e){
   if (!e) var e = window.event;
   e.cacenlBubble = true;
   e.stopPropagation();
