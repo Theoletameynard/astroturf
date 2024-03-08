@@ -1,14 +1,24 @@
-console.log("hello world");
+console.log("welcome to astroturf world 🖖");
 
 $("#artists, #pro, #contact").hide();
 
-$("#background-video, h1").click(function(){
+$("#background-video, h1, #content").click(function(){
   //$("#artists, #pro, #contact").hide();
   showDiv(null);
 });
 
-function showDiv(id){
+$("p").click(function(e){
+  if (!e) var e = window.event;
+  e.cacenlBubble = true;
+  e.stopPropagation();
+});
+
+
+function showDiv(id,e){
   $("#artists, #pro, #contact").hide();
+   if (!e) var e = window.event
+    e.cancelBubble = true;
+  e.stopPropagation();
  
   if(id == "#contact") {
     $("h1, nav, #content").addClass("blendy");
