@@ -1,3 +1,3 @@
 <?php
-$recaptchaSecretKey = "6LctNVwpAAAAAB1CpDbAgMb2VTYa0zQs6fM0Dwev";
+$recaptchaSecretKey = "6LemcWMpAAAAAFyHteLd46nwm-KUGfcYHZFr0v6q";
 ?>
