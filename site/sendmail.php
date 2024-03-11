@@ -6,7 +6,7 @@
   <title>Astroturf : Message envoyé !</title>
 </head>
 <body>
-  <div id="vbravo">
+  <div id="vbravo" class="video-container">
         <video autoplay muted loop playsinline id="logoVideo">
             <source src="medias/Videocontact.mp4" type="video/mp4">
             Votre navigateur ne supporte pas les vidéos HTML5.
