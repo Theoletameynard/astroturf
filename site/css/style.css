@@ -43,6 +43,7 @@ body, html {
   min-width: 100vw !important;
   /*min-height: 20vh !important;*/
   /*height:100vh !important;*/
+  min-height:100vh;
 
   z-index: -1;
 
@@ -77,6 +78,7 @@ nav ul li {
 } 
 
 #content {
+  overflow:scroll;
   display: flex;
   justify-content:center;
   align-items:center;
