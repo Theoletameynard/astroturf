@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php         
+         
+         echo '<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,9 +18,7 @@
     </div>
 </body>
 </html>
-
-
-<?php
+' ;
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
