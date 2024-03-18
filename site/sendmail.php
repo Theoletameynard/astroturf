@@ -14,11 +14,8 @@
         <video autoplay muted loop playsinline id="vbravo">
             <source src="medias/Videocontact.mp4" type="video/mp4">
             Votre navigateur ne supporte pas les vidéos HTML5.
-        </video>
-    </div>
-</body>
-</html>
-' ;
+        </video>'
+;
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -45,8 +42,13 @@ if(intval($responseKeys["success"]) !== 1) {
 
   // Envoi de l'e-mail
   if(mail($to, $subject, $body)) {
-      echo 'Le formulaire a été soumis avec succès.';
+      echo '<span>Le formulaire a été soumis avec succès.</span>';
   } else {
       echo 'Erreur lors de l\'envoi de l\'e-mail.';
   }
 }
+echo '
+</div>
+</body>
+</html>
+' ;
