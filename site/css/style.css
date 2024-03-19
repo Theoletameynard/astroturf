@@ -109,8 +109,14 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100vw !important;
+  index:0;
 }
 
+#txtform {
+index:1;
+
+
+}
 
 /* === 2. TYPOGRAPHY === */
 
