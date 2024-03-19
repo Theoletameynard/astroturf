@@ -1,6 +1,7 @@
 # Astroturf
 
 ## to do
+* [ ] rename
 * [x] setup github
 * [x] mettre un favicon
 * [x] ajouter code sur github
