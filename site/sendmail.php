@@ -42,9 +42,9 @@ if(intval($responseKeys["success"]) !== 1) {
 
   // Envoi de l'e-mail
   if(mail($to, $subject, $body)) {
-      echo '<span id="txtform">Le formulaire a été soumis avec succès.</span>';
+      echo '<span class="txtform">Le formulaire a été soumis avec succès.</span>';
   } else {
-      echo 'Erreur lors de l\'envoi de l\'e-mail.';
+      echo '<span class="txtform">Erreur lors de l\'envoi de l\'e-mail.</span>';
   }
 }
 echo '
