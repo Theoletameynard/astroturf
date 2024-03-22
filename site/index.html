@@ -29,8 +29,8 @@
 
     <body>
 
-      <div class="video-container">
-	<video autoplay muted loop playsinline id="background-video">
+      <div class="video-container" itemscope itemtype="http://schema.org/VideoObject">
+	<video autoplay muted loop playsinline id="background-video" itemprop="video">
 	  <source src="./medias/astroturf-showreel.mp4" type="video/mp4">
 	  Votre navigateur ne supporte pas les vidéos HTML5.
 	</video>
@@ -52,7 +52,7 @@
 	</nav>
 
 	<div id="content">
-	  <div id="artists">
+	  <div id="artists" itemscope itemtype="http://schema.org/CreativeWork">
 	    <h2>
 	      <strong>Astroturf</strong> : <strong>Vidéos pour Artistes</strong>
 	    </h2>
@@ -88,7 +88,7 @@
 
 	  </div>
 
-	  <div id="contact">
+	  <div id="contact" itemscope itemtype="http://schema.org/ContactPage">
 	    <form id="mon-formulaire" action="./sendmail.php" method="post">
 	    <h2>Travaillons ensemble !</h2>
 	      <div class="form-group">
@@ -118,7 +118,7 @@
 	    </form>
 	  </div>
 	</div>
-	<footer>
+	<footer itemscope itemtype="http://schema.org/WPFooter">
 	  <p>© 2024 Astroturf, Tous droits réservés.</p>
 	  <a href="mentions-legales.html" target="_blank"> Mentions Légales / Document Unique RGPD</a>
 	</footer>
