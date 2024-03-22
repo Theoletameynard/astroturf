@@ -234,4 +234,12 @@ textarea {
   h1 img {
     width:85%;
   }
+
+  #contact {
+    width:90vw;
+  }
+
+  footer {
+    position:relative;
+  }
 }
