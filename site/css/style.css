@@ -229,6 +229,10 @@ textarea {
 
   #content {
     font-size:1em;
+    margin-top:20px;
+  }
+  #pro {
+    overflow:hidden;
   }
 
   h1 img {
@@ -237,6 +241,11 @@ textarea {
 
   #contact {
     width:90vw;
+    max-width:90%;
+  }
+
+  textarea{
+    width:90%;
   }
 
   footer {
