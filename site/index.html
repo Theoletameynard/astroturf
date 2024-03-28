@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LW7LS09ZXQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LW7LS09ZXQ');
+</script>
+<!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astroturf - Vidéos pour Artistes.</title>
+    <title>Astroturf : Création de Vidéos Cinématographiques pour Artistes | Unique & ArtistiqueAstroturf - Vidéos pour Artistes.</title>
     <meta name="description"
-	  content="Rejoignez un collectif passionné offrant des vidéos cinématographiques uniques pour artistes. Découvrez une collaboration artistique qui valorise la vision et l'alchimie créative, adaptée à tout budget.">
+	  content="Rejoignez un collectif passionné offrant des vidéos cinématographiques uniques pour artistes. Découvrez une collaboration artistique qui valorise la vision et l'alchimie créative, adaptée à tout budget.Découvrez Astroturf, 
+	  votre collectif pour des vidéos d'art cinématographiques uniques. Collaborations artistiques valorisant vision créative adaptées à tous budgets. Explorez plus.">
 
     <meta name="keywords" content="your, tags">
     <meta name="subject" content="your website's subject">
@@ -29,8 +42,13 @@
 
     <body>
 
-      <div class="video-container">
-	<video autoplay muted loop playsinline id="background-video">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TL79VTPT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+      <div class="video-container" itemscope itemtype="http://schema.org/VideoObject">
+	<video autoplay muted loop playsinline id="background-video" itemprop="video">
 	  <source src="./medias/astroturf-showreel.mp4" type="video/mp4">
 	  Votre navigateur ne supporte pas les vidéos HTML5.
 	</video>
@@ -52,7 +70,7 @@
 	</nav>
 
 	<div id="content">
-	  <div id="artists">
+	  <div id="artists" itemscope itemtype="http://schema.org/CreativeWork">
 	    <h2>
 	      <strong>Astroturf</strong> : <strong>Vidéos pour Artistes</strong>
 	    </h2>
@@ -88,7 +106,7 @@
 
 	  </div>
 
-	  <div id="contact">
+	  <div id="contact" itemscope itemtype="http://schema.org/ContactPage">
 	    <form id="mon-formulaire" action="./sendmail.php" method="post">
 	    <h2>Travaillons ensemble !</h2>
 	      <div class="form-group">
@@ -118,7 +136,7 @@
 	    </form>
 	  </div>
 	</div>
-	<footer>
+	<footer itemscope itemtype="http://schema.org/WPFooter">
 	  <p>© 2024 Astroturf, Tous droits réservés.</p>
 	  <a href="mentions-legales.html" target="_blank"> Mentions Légales / Document Unique RGPD</a>
 	</footer>
