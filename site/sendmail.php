@@ -29,7 +29,7 @@ $responseKeys = json_decode($response, true);
 
 
 if(intval($responseKeys["success"]) !== 1) {
-  echo 'Échec de la vérification reCAPTCHA.';
+  echo '<span class="txtform">Échec de la vérification reCAPTCHA.</span>';
 } else {
   // Traiter le formulaire ici
   $nom = $_POST['name'];

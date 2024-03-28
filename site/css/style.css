@@ -12,6 +12,12 @@
   overflow-anchor:none;
 }
 
+.txtform {
+  text-align:center;
+  color:white;
+  font-size:32pt;
+}
+
 /* ===== 0. LAYOUT ===== */
 
 body, html {
@@ -231,8 +237,8 @@ textarea {
     font-size:1em;
     margin-top:20px;
   }
-  #pro {
-    overflow:hidden;
+  #pro, #artists  {
+    overflow:scroll;
   }
 
   h1 img {
@@ -250,5 +256,12 @@ textarea {
 
   footer {
     position:relative;
+  }
+
+  #vbravo {
+    width:100%;
+  }
+  .txtform {
+    font-size:22pt;
   }
 }
