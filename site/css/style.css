@@ -227,8 +227,26 @@ textarea {
 }
 
 /* ===== ?. mobile ===== */
+@media screen and (min-width:800px) and (max-width: 1400px) {
 
-@media screen and (max-width: 1200px) {
+  h1 img {
+    width:35%;
+  }
+
+  #content {
+    font-size:1em;
+    padding-top:20px;
+    padding-bottom:30px;
+  }
+
+  form {
+    margin-bottom:100px;
+  }
+
+  
+}
+
+@media screen and (max-width: 800px) {
   nav a {
     font-size:1em;
   }
